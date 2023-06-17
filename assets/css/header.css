@@ -1,0 +1,74 @@
+/*============================================================================================
+	Header Area
+==============================================================================================*/
+.header-area {
+  background: var(--secondary-color);
+  padding: 32px 0px;
+  position: relative;
+}
+.header-area.is-sticky {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  z-index: 9999;
+  animation: fadeInDown 1s both 0.2s;
+  backdrop-filter: saturate(180%) blur(5px);
+  background: #091014e8;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo img {
+  width: 154px;
+  height: 42px;
+  object-fit: contain;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-menu ul li {
+  display: inline-block;
+  margin-right: 24px;
+}
+.header-menu ul li:last-child {
+  margin: 0;
+}
+.header-menu ul li a {
+  color: var(--white-color);
+  line-height: 20px;
+}
+.header-menu ul li.active a,
+.header-menu ul li a:hover {
+  color: var(--primary-color);
+}
+.header-menu-icon {
+  margin-left: 100px;
+}
+.header-menu-icon a i {
+  color: var(--primary-color);
+  font-size: 20px;
+  transition: all 0.4s ease;
+  position: relative;
+  top: 3px;
+}
+.header-menu-icon a:hover i {
+  color: var(--white-color);
+}
+.header-social-icon ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.header-social-icon ul li:last-child {
+  margin: 0;
+}
+.header-social-icon ul li img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+/*============================================================================================
+	End Header Area
+==============================================================================================*/

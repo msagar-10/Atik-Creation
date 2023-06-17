@@ -1,0 +1,142 @@
+/*============================================================================================
+	About Area
+==============================================================================================*/
+.about-area {
+  padding: 120px 0px;
+  background: #161d22;
+}
+.about-info-top {
+  display: flex;
+}
+.about-info-img img {
+  max-width: 274px;
+  height: 274px;
+  border-radius: 100%;
+}
+.about-info-biography {
+  margin-left: 46px;
+}
+.about-info-biography h4 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.about-info-biography p {
+  color: #ddd;
+  margin-bottom: 24px;
+}
+.about-social-links a {
+  font-weight: 600;
+  font-size: 16px;
+}
+.about-social-links a:hover {
+  color: var(--primary-color);
+}
+.about-social-links p {
+  margin: 0;
+}
+.about-info-bottom {
+  display: flex;
+  margin-top: 32px;
+}
+.about-info-details-widget.education {
+  width: 28%;
+  padding-right: 50px;
+}
+.about-info-bottom-right {
+  width: 72%;
+}
+.about-info-details-widget h4 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160.9%;
+  margin-bottom: 12px;
+}
+.about-info-details-widget.education p {
+  color: #ddd;
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.about-info-details-widget.education p::before {
+  position: absolute;
+  content: "";
+  width: 118px;
+  height: 1px;
+  left: 0;
+  bottom: -1px;
+  background: var(--primary-color);
+}
+.about-info-details-widget.education p:last-child::before {
+  display: none;
+}
+.about-info-details-widget.education p:last-child {
+  padding: 0;
+  margin: 0;
+}
+.about-info-software-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 80%;
+}
+.about-info-software-list span {
+  color: #ddd;
+  display: inline-block;
+  position: relative;
+  padding-left: 16px;
+}
+.about-info-software-list span::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: var(--primary-color);
+  top: 9px;
+  left: 0;
+}
+.about-info-details-widget.job-experience {
+  margin-top: 48px;
+}
+.about-job-experience-inner {
+  display: flex;
+  align-items: center;
+}
+.about-job-experience-single p {
+  color: #ddd;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.about-job-experience-single span {
+  color: #ddd;
+  display: inline-block;
+  font-size: 15px;
+}
+.about-job-experience-single {
+  position: relative;
+  padding-right: 34px;
+  margin-right: 34px;
+}
+.about-job-experience-single::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 90px;
+  background: #dddddd4f;
+  right: 0;
+  top: 0;
+}
+.about-job-experience-single:last-child::before {
+  display: none;
+}
+.about-job-experience-single:last-child {
+  padding: 0;
+  margin: 0;
+}
+/*============================================================================================
+	End About Area
+==============================================================================================*/
