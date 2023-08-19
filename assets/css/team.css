@@ -5,6 +5,9 @@
   background: #161d22;
   padding: 100px 0px;
 }
+.team-slider {
+  margin-bottom: 56px;
+}
 .single-team {
   display: flex;
   align-items: center;
@@ -104,7 +107,10 @@
 /* Slider Dot */
 .team-area .owl-dots {
   line-height: 0;
-  margin-top: 56px;
+  bottom: -56px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 .team-area .owl-theme .owl-dots .owl-dot span {
   width: 64px;
