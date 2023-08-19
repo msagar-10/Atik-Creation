@@ -1,0 +1,152 @@
+/*============================================================================================
+	Services Area
+==============================================================================================*/
+.service-area {
+  background: #161d22;
+  padding: 100px 0px;
+}
+.service-area .container {
+  position: relative;
+}
+.service-tab-menu .list-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px 24px;
+}
+.service-tab-menu .list-group-item {
+  text-align: center;
+  color: var(--primary-color) !important;
+  background: #2c3337;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 160%;
+  padding: 16px 24px;
+  border-radius: 6px;
+  border: 1px solid transparent !important;
+  white-space: nowrap;
+}
+.service-tab-menu .list-group-item.active,
+.service-tab-menu .list-group-item:hover {
+  border: 1px solid var(--primary-color) !important;
+  background: #2c3337;
+  margin: 0 !important;
+}
+.service-tab-menu .list-group-item img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+.service-tab-details {
+  margin-top: 50px;
+}
+.single-service {
+  background: #2c3337;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  border-radius: 15px;
+  padding: 22px 106px 22px 24px;
+}
+.service-img img {
+  width: 312px !important;
+  max-width: 312px !important;
+  height: 324px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.service-content-title {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  line-height: 160%;
+}
+.service-content-text {
+  margin: 0;
+  color: var(--white-color);
+}
+.service-content-btn {
+  margin-top: 20px;
+}
+.service-content-btn .theme-btn {
+  border: 1px solid var(--primary-color);
+  background: #1d2022;
+  color: var(--white-color);
+  font-size: 12px;
+  padding: 4px 17px;
+}
+.service-content-btn .theme-btn:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid transparent;
+}
+.service-content-btn .theme-btn i {
+  font-size: 16px;
+  margin-right: 6px;
+  position: relative;
+  top: 4px;
+}
+.service-section-title {
+  position: absolute;
+  right: 0;
+  top: 12%;
+  width: 20px;
+  height: 100%;
+}
+.service-section-title::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 450px;
+  background: #ffffff6e;
+  top: 40px;
+}
+.service-section-title p {
+  margin: 0;
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 300;
+  transform: rotate(-90deg);
+}
+/* Slider Arow */
+.service-area .owl-theme .owl-nav [class*="owl-"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: #1a2025;
+  background: #4c4c51;
+  padding: 0;
+  font-size: 16px;
+  line-height: 35px;
+  transition: all 0.4s ease;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.service-area:hover .owl-theme .owl-nav [class*="owl-"] {
+  opacity: 1;
+  visibility: visible;
+}
+.service-area .owl-theme .owl-nav [class*="owl-"]:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+.service-area .owl-prev {
+  left: 0;
+}
+.service-area .owl-next {
+  right: 0;
+}
+.service-area:hover .owl-prev {
+  left: -50px;
+}
+.service-area:hover .owl-next {
+  right: -50px;
+}
+/*============================================================================================
+	End Services Area
+==============================================================================================*/

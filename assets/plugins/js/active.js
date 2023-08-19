@@ -46,35 +46,81 @@
     }
 
     /*==============================================================================
+			CounterUp JS
+		================================================================================*/
+    $(".counter").counterUp({
+      time: 1500,
+    });
+
+    /*==============================================================================
 		  Testimonial Slider
 	  ================================================================================*/
-    $(".testimonial-slider").slick({
-      centerMode: true,
+    $(".testimonial-slider").owlCarousel({
+      items: 2,
       autoplay: true,
-      centerPadding: "0px",
+      loop: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      smartSpeed: 500,
+      merge: true,
+      nav: true,
+      dots: false,
+      margin: 30,
+      navText: [
+        '<i class="fi-ss-caret-left aria-hidden="true"></i>',
+        '<i class="fi-ss-caret-right" aria-hidden="true"></i>',
+      ],
+      responsive: {
+        300: {
+          items: 1,
+        },
+        480: {
+          items: 1,
+        },
+        768: {
+          items: 2,
+        },
+        1170: {
+          items: 2,
+        },
+      },
+    });
+    /*==============================================================================
+      Team Slider
+    ================================================================================*/
+    $(".team-slider").owlCarousel({
+      items: 1,
+      autoplay: true,
+      loop: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      smartSpeed: 500,
+      merge: true,
+      nav: true,
       dots: true,
-      arrows: false,
-      slidesToShow: 3,
-      autoplaySpeed: 2000,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "52px",
-            slidesToShow: 1,
-          },
-        },
+      margin: 30,
+      navText: [
+        '<i class="fi-ss-caret-left aria-hidden="true"></i>',
+        '<i class="fi-ss-caret-right" aria-hidden="true"></i>',
+      ],
+    });
+    /*==============================================================================
+      Service Slider
+    ================================================================================*/
+    $(".service-slider").owlCarousel({
+      items: 1,
+      autoplay: false,
+      loop: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      smartSpeed: 500,
+      merge: true,
+      nav: true,
+      dots: false,
+      margin: 30,
+      navText: [
+        '<i class="fi-ss-caret-left aria-hidden="true"></i>',
+        '<i class="fi-ss-caret-right" aria-hidden="true"></i>',
       ],
     });
   });

@@ -1,0 +1,119 @@
+/*============================================================================================
+	Testimonial Area
+==============================================================================================*/
+.testimonial-area {
+  background-color: #1a2025;
+  padding: 116px 0px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.testimonial-slider {
+  margin-top: 70px;
+}
+.testimonial-img img {
+  max-width: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.testimonial-review li {
+  display: inline-block;
+  margin-right: 4px;
+}
+.testimonial-review li:last-child {
+  margin: 0;
+}
+.testimonial-review li img {
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+}
+.single-funfact {
+  text-align: center;
+}
+.single-funfact h2 {
+  font-size: 52px;
+  color: var(--primary-color);
+  line-height: normal;
+  padding: 4px 12px;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+.single-funfact p {
+  border: 1px solid var(--primary-color);
+  font-size: 16px;
+  color: var(--white-color);
+  padding: 14px;
+  line-height: normal;
+  margin: 0;
+}
+.single-testimonial {
+  border: 0.5px solid #fff;
+  border-radius: 19px;
+  padding: 24px 45px 70px 38px;
+}
+.testimonial-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonial-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.testimonial-info-main h6 {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2px;
+}
+.testimonial-info-main p {
+  font-size: 13px;
+  color: var(--white-color);
+  margin: 0;
+}
+.testimonial-bottom {
+  margin-top: 34px;
+}
+.testimonial-text {
+  margin: 0;
+  color: var(--white-color);
+  font-size: 18px;
+  line-height: normal;
+}
+
+/* Slider Arow */
+.testimonial-area .owl-theme .owl-nav [class*="owl-"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: #1a2025;
+  background: #4c4c51;
+  padding: 0;
+  font-size: 16px;
+  line-height: 35px;
+  transition: all 0.4s ease;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.testimonial-area .owl-theme .owl-nav [class*="owl-"]:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+.testimonial-area .owl-prev {
+  left: -50px;
+}
+.testimonial-area .owl-next {
+  right: -50px;
+}
+/*============================================================================================
+	End Testimonial Area
+==============================================================================================*/
